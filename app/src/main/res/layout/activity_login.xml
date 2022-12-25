@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/loginbkg"
+    android:background="@drawable/screen"
     tools:context=".Login">
 
     <ProgressBar
@@ -27,7 +27,13 @@
         app:cardCornerRadius="30dp"
         android:paddingTop="10dp"
         app:cardElevation="25dp"
+        app:cardBackgroundColor="@color/black"
         android:background="@drawable/custom_edittext">
+
+        <FrameLayout
+            android:background="#FFFFFF"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,16 +48,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:fontFamily="@font/quicksand_bold"
                 android:textAlignment="center"
-                android:textColor="@color/purple"
+                android:textColor="#5E17EB"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:maxLines="1"
-                android:id="@+id/loginusername"
+                android:id="@+id/loginemail"
                 android:ellipsize="end"
                 android:lines="1"
+                android:fontFamily="@font/kumbh_sans"
                 android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -59,7 +67,7 @@
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:drawablePadding="8dp"
-                android:hint="Username"
+                android:hint="Email address"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
@@ -69,6 +77,7 @@
                 android:id="@+id/loginpassword"
                 android:ellipsize="end"
                 android:lines="1"
+                android:fontFamily="@font/kumbh_sans"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -86,7 +95,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purple"
+                android:backgroundTint="#5E17EB"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="Login"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
@@ -103,9 +113,10 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
+        android:fontFamily="@font/kumbh_sans"
         android:text="Not yet registered? SignUp Now"
         android:textAlignment="center"
-        android:textColor="@color/purple"
+        android:textColor="#5E17EB"
         android:textSize="14sp" />
 
 </LinearLayout>

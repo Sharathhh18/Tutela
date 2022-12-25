@@ -21,6 +21,7 @@ public class RegLoading extends AppCompatActivity {
             public void run() {
                 Toast.makeText(getApplicationContext(),"Registration Succesfull",Toast.LENGTH_LONG);
                 startActivity(new Intent(getApplicationContext(), Login.class));
+                finish();
             }
         }, 5000);
     }

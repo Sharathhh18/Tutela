@@ -21,7 +21,8 @@ public class LogLoading extends AppCompatActivity {
             @Override
             public void run() {
                 Toast.makeText(getApplicationContext(),"Registration Succesfull",Toast.LENGTH_LONG);
-                startActivity(new Intent(getApplicationContext(), MScreen.class));
+                startActivity(new Intent(getApplicationContext(), MScreen.class).putExtra("username",""+getIntent().getStringExtra("username")));
+                finish();
             }
         }, 5000);
     }
